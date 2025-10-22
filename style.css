@@ -86,6 +86,11 @@ header p {
 .maquete { border-top: 6px solid #3498db; }   /* Azul */
 .robotica { border-top: 6px solid #27ae60; }  /* Verde */
 .foguetes { border-top: 6px solid #e67e22; }  /* Laranja */
+.foguetes { border-top: 6px solid #e67e22; }  /* Laranja */
+.foguetes { border-top: 6px solid #e67e22; }  /* Laranja */
+.foguetes { border-top: 6px solid #e67e22; }  /* Laranja */
+.foguetes { border-top: 6px solid #e67e22; }  /* Laranja */
+.foguetes { border-top: 6px solid #e67e22; }  /* Laranja */
 
 footer {
   background-color: #000;
@@ -169,6 +174,7 @@ footer {
   background-color: #333333; /* hover mais escuro */
   transform: scale(1.05);
 }
+
 
 
 
