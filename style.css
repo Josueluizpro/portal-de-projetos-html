@@ -81,11 +81,6 @@ header p {
   background-color: #444;
 }
 
-.card-link {
-  text-decoration: none;
-  color: inherit;
-}
-
 
 /* Cores personalizadas por projeto */
 .maquete { border-top: 6px solid #3498db; }   /* Azul */
@@ -120,3 +115,4 @@ footer {
   margin: 10px auto;
 
 }
+
