@@ -117,13 +117,14 @@ footer {
 }
 
 footer {
-  background-color: #007bff;
-  color: white;
+  background-color: #ffea00; /* amarelo vibrante igual ao topo */
+  color: #0056b3;            /* texto azul escuro para contraste */
   text-align: center;
   padding: 20px 10px;
-  border-top: 5px solid #0056b3;
+  border-top: 5px solid #ffc107; /* borda topo um pouco mais escura */
   margin-top: 40px;
 }
+
 
 .footer-content {
   display: flex;
@@ -169,5 +170,6 @@ footer {
   background-color: #ffc107;
   transform: scale(1.05);
 }
+
 
 
