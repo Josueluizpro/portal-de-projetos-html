@@ -84,9 +84,39 @@
   </footer>
 
   <script src="script.js"></script>
+
+
+
+  <!-- Rodapé -->
+<footer>
+  <div class="footer-content">
+    <img src="imagens/foto-perfil.png" alt="Foto de Perfil" class="perfil-footer">
+    <p>Professor Josué Luiz do Carmo — Projetos de Robótica Educacional</p>
+
+    <p id="contador">
+      👀 <span id="visitas">0</span> visitas
+    </p>
+
+    <a href="https://josueluiz.github.io/portal-de-projetos/" class="botao-voltar">⬅ Voltar ao Portal de Projetos</a>
+  </div>
+</footer>
+
+<!-- Script do contador de visitas -->
+<script>
+  // ID exclusivo de cada site (mude o nome conforme o projeto)
+  const contadorId = 'josueluiz-maquete'; // Exemplo: josueluiz-foguete, josueluiz-portal, etc.
+
+  fetch(https://api.countapi.xyz/hit/${contadorId}/visitas)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitas').innerText = data.value;
+    });
+</script>
+
 </body>
 
 </html>
+
 
 
 
