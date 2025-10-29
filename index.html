@@ -14,6 +14,40 @@
     <img src="imagens/rfl-2.png" alt="Professor Josué Luiz do Carmo" class="foto-perfil-cabecalho">
   </header>
 
+
+
+
+  <!-- Contador de visitas -->
+<div id="contador-visitas" style="padding: 10px; border: 1px solid #ccc; width: fit-content; margin-top: 10px;">
+  Carregando visitas...
+</div>
+
+<script>
+  const contador = document.getElementById('contador-visitas');
+
+  // Substitua 'SEU_TOKEN_AQUI' por um token da API gratuita, exemplo: https://countapi.xyz
+  const namespace = 'meu-site-josue';
+  const key = 'visitas';
+
+  fetch(https://api.countapi.xyz/hit/${namespace}/${key})
+    .then(res => res.json())
+    .then(data => {
+      contador.innerText = Número de visitas: ${data.value};
+    })
+    .catch(err => {
+      console.error('Erro ao carregar contador:', err);
+      contador.innerText = 'Não foi possível carregar o contador.';
+    });
+</script>
+
+
+
+
+
+
+
+  
+
   <main>
     <section class="projetos"> 
     <div class="card maquete">
@@ -152,6 +186,7 @@ Um projeto que transforma a matemática em prática, permitindo que os alunos co
 </body>
 
 </html>
+
 
 
 
