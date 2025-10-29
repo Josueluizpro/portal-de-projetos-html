@@ -17,31 +17,6 @@
 
 
 
-  <!-- Contador de visitas -->
-<div id="contador-visitas" style="padding: 10px; border: 1px solid #ccc; width: fit-content; margin-top: 10px;">
-
-</div>
-
-<script>
-  const contador = document.getElementById('contador-visitas');
-
-  // Substitua 'SEU_TOKEN_AQUI' por um token da API gratuita, exemplo: https://countapi.xyz
-  const namespace = 'meu-site-josue';
-  const key = 'visitas';
-
-  fetch(https://api.countapi.xyz/hit/${namespace}/${key})
-    .then(res => res.json())
-    .then(data => {
-      contador.innerText = Número de visitas: ${data.value};
-    })
-    .catch(err => {
-      console.error('Erro ao carregar contador:', err);
-      contador.innerText = 'Não foi possível carregar o contador.';
-    });
-</script>
-
-
-
 
 
 
@@ -173,9 +148,24 @@ Um projeto que transforma a matemática em prática, permitindo que os alunos co
 
 
 
+  <!-- Script do contador de visitas -->
+<script>
+  // ID exclusivo de cada site (mude o nome conforme o projeto)
+  const contadorId = 'josueluiz-portal'; // Exemplo: josueluiz-foguete, josueluiz-portal, etc.
+
+  fetch(https://api.countapi.xyz/hit/${contadorId}/visitas)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitas').innerText = data.value;
+    });
+</script>
+
+
+
 </body>
 
 </html>
+
 
 
 
