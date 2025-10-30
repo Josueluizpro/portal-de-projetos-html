@@ -17,7 +17,39 @@
 
 
 
+<!-- INÍCIO Contador de Visitas -->
+<div id="contador-visitas-container" style="
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    width: fit-content;
+    font-family: Arial, sans-serif;
+    color: #333;
+">
+  <span id="contador-visitas">Carregando visitas…</span>
+</div>
 
+<script>
+  (function(){
+    const container = document.getElementById('contador-visitas');
+    const namespace = 'josueluizpro-portal';
+    const key = 'visitas';
+    // Usando CountAPI
+    fetch(https://api.countapi.xyz/hit/${namespace}/${key})
+      .then(res => res.json())
+      .then(data => {
+        container.innerText = Número de visitas: ${data.value};
+      })
+      .catch(err => {
+        console.error('Erro ao carregar contador:', err);
+        container.innerText = 'Não foi possível carregar o contador.';
+      });
+  })();
+</script>
+<!-- FIM Contador de Visitas -->
 
 
 
@@ -148,7 +180,7 @@ Um projeto que transforma a matemática em prática, permitindo que os alunos co
 
 
 
-  <!-- Script do contador de visitas -->
+  <!-- Script do contador de visitas
 <script>
   // ID exclusivo de cada site (mude o nome conforme o projeto)
   const contadorId = 'josueluiz-portal'; // Exemplo: josueluiz-foguete, josueluiz-portal, etc.
@@ -158,13 +190,13 @@ Um projeto que transforma a matemática em prática, permitindo que os alunos co
     .then(data => {
       document.getElementById('visitas').innerText = data.value;
     });
-</script>
-
+</script> -->
 
 
 </body>
 
 </html>
+
 
 
 
