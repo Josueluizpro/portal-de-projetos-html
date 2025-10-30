@@ -91,6 +91,7 @@ header p {
 .foguetes3 { border-top: 6px solid #ffc107; }  /* Amarelo */
 .foguetes4 { border-top: 6px solid #17a2b8; }  /* Ciano */
 .foguetes5 { border-top: 6px solid #e83e8c; }   /* Rosa */
+.foguetes5 { border-top: 6px solid #27ae60; }   /* Rosa */
 
 footer {
   background-color: #000;
@@ -174,6 +175,7 @@ footer {
   background-color: #333333; /* hover mais escuro */
   transform: scale(1.05);
 }
+
 
 
 
